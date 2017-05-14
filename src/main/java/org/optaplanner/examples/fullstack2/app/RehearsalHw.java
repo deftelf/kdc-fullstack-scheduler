@@ -142,65 +142,87 @@ public class RehearsalHw {
         Participant directorVicky = addParticipant("directorVicky", sch.participants);
 
         sch.rehearsals = new HashSet<Rehearsal>();
-        sch.rehearsals.add(new Rehearsal("", 5, 31, 19));
-        sch.rehearsals.add(new Rehearsal("", 5, 31, 20));
-        sch.rehearsals.add(new Rehearsal("", 6, 3, 12));
-        sch.rehearsals.add(new Rehearsal("", 6, 3, 13));
-        sch.rehearsals.add(new Rehearsal("", 6, 3, 14));
-        sch.rehearsals.add(new Rehearsal("", 6, 3, 15));
-        sch.rehearsals.add(new Rehearsal("2", 6, 3, 12));
-        sch.rehearsals.add(new Rehearsal("2", 6, 3, 13));
-        sch.rehearsals.add(new Rehearsal("2", 6, 3, 14));
-        sch.rehearsals.add(new Rehearsal("2", 6, 3, 15));
-        sch.rehearsals.add(new Rehearsal("", 6, 5, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 5, 20));
-        sch.rehearsals.add(new Rehearsal("2", 6, 5, 19));
-        sch.rehearsals.add(new Rehearsal("2", 6, 5, 20));
-        sch.rehearsals.add(new Rehearsal("", 6, 7, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 7, 20));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 12));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 13));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 14));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 15));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 12));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 13));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 14));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 15));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 10, 12));
-        sch.rehearsals.add(new Rehearsal("", 6, 10, 13));
-        sch.rehearsals.add(new Rehearsal("", 6, 10, 14));
-        sch.rehearsals.add(new Rehearsal("", 6, 10, 15));
-        sch.rehearsals.add(new Rehearsal("2", 6, 10, 12));
-        sch.rehearsals.add(new Rehearsal("2", 6, 10, 13));
-        sch.rehearsals.add(new Rehearsal("2", 6, 10, 14));
-        sch.rehearsals.add(new Rehearsal("2", 6, 10, 15));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 22, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 22, 20));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 19));
+        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 20));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 12, 20));
-        sch.rehearsals.add(new Rehearsal("2", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("2", 6, 12, 20));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 24, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 24, 20));
+        sch.rehearsals.add(new Rehearsal("foundry", 5, 24, 19));
+        sch.rehearsals.add(new Rehearsal("foundry", 5, 24, 20));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 12, 20));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 31, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 5, 31, 20));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 17, 12));
-        sch.rehearsals.add(new Rehearsal("", 6, 17, 13));
-        sch.rehearsals.add(new Rehearsal("", 6, 17, 14));
-        sch.rehearsals.add(new Rehearsal("", 6, 17, 15));
-        sch.rehearsals.add(new Rehearsal("2", 6, 17, 12));
-        sch.rehearsals.add(new Rehearsal("2", 6, 17, 13));
-        sch.rehearsals.add(new Rehearsal("2", 6, 17, 14));
-        sch.rehearsals.add(new Rehearsal("2", 6, 17, 15));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 12));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 13));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 14));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 15));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 12));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 13));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 14));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 15));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 19, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 19, 20));
-        sch.rehearsals.add(new Rehearsal("2", 6, 19, 19));
-        sch.rehearsals.add(new Rehearsal("2", 6, 19, 20));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 20));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 5, 19));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 5, 20));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 21, 19));
-        sch.rehearsals.add(new Rehearsal("", 6, 21, 20));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 7, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 7, 20));
 
-        sch.rehearsals.add(new Rehearsal("", 6, 24, 12));
-        sch.rehearsals.add(new Rehearsal("", 6, 24, 13));
-        sch.rehearsals.add(new Rehearsal("", 6, 24, 14));
-        sch.rehearsals.add(new Rehearsal("", 6, 24, 15));
-        sch.rehearsals.add(new Rehearsal("2", 6, 24, 12));
-        sch.rehearsals.add(new Rehearsal("2", 6, 24, 13));
-        sch.rehearsals.add(new Rehearsal("2", 6, 24, 14));
-        sch.rehearsals.add(new Rehearsal("2", 6, 24, 15));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 12));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 13));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 14));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 15));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 12));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 13));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 14));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 15));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 20));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 19));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 20));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 14, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 14, 20));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 12));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 13));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 14));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 15));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 12));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 13));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 14));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 15));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 20));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 19, 19));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 19, 20));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 21, 19));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 21, 20));
+
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 12));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 13));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 14));
+        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 15));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 12));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 13));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 14));
+        sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 15));
 
 
         // Speculative
