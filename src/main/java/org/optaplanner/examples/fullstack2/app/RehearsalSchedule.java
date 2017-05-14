@@ -55,36 +55,52 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
     }
 
     public String participantToString() {
-        HashMap<Participant, ArrayList<Rehearsal>> parRehs = new HashMap<Participant, ArrayList<Rehearsal>>();
+        HashMap<Participant, ArrayList<PieceRehearsal>> parRehs = new HashMap<Participant, ArrayList<PieceRehearsal>>();
         for (Participant p : participants)
-            parRehs.put(p, new ArrayList<Rehearsal>());
+            parRehs.put(p, new ArrayList<PieceRehearsal>());
         for (Piece piece : pieces) {
             for (Rehearsal reh : piece.getRehearsals()) {
                 for (Participant par : piece.participants) {
-                    parRehs.get(par).add(reh);
+                    parRehs.get(par).add(new PieceRehearsal(piece, reh));
                 }
             }
         }
 
         StringBuilder str = new StringBuilder();
         for (Participant p : parRehs.keySet()) {
-            str.append(p.name);
-            str.append("   ");
-            ArrayList<Rehearsal> parReh = parRehs.get(p);
-            parReh.sort(new Comparator<Rehearsal>() {
+            str.append(p.name+"\n");
+            ArrayList<PieceRehearsal> parReh = parRehs.get(p);
+            parReh.sort(new Comparator<PieceRehearsal>() {
                 @Override
-                public int compare(Rehearsal t0, Rehearsal t1) {
-                    return t0.date.compareTo(t1.date);
+                public int compare(PieceRehearsal t0, PieceRehearsal t1) {
+                    return t0.rehearsal.date.compareTo(t1.rehearsal.date);
                 }
             });
-            for (Rehearsal r : parReh) {
+            for (PieceRehearsal r : parReh) {
+                str.append("   ");
                 str.append(r.toString());
-                str.append(", ");
+                str.append("\n");
             }
             str.append("\n");
         }
 
         return str.toString();
+    }
+
+
+    static class PieceRehearsal {
+        Piece piece;
+        Rehearsal rehearsal;
+
+        PieceRehearsal(Piece piece, Rehearsal rehearsal) {
+            this.piece = piece;
+            this.rehearsal = rehearsal;
+        }
+
+        @Override
+        public String toString() {
+            return rehearsal.toString() + " (" + piece.name + ")";
+        }
     }
 
     public String pieceParticipants() {

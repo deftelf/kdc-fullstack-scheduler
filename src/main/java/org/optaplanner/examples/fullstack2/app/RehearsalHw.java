@@ -357,6 +357,14 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 14));
         sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 15));
 
+        System.out.print("Participant unavailability:\n");
+        for (Participant p : sch.participants) {
+            System.out.print(p.name + ": ");
+            for (Rehearsal.Date d : p.notAvailableDate) {
+                System.out.print(d.toString() + ", ");
+            }
+            System.out.println();
+        }
 
         Map<Rehearsal.Date, Integer> allDates = new HashMap<Rehearsal.Date, Integer>();
         for (int i=1; i <= 24; i++) {

@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81172dc6-0485-4312-86ff-a756e4a81ad1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.class" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw.class" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$PieceRehearsal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$1.class" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$2.class" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.class" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,18 +50,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="380" column="50" lean-forward="false" selection-start-line="380" selection-start-column="50" selection-end-line="380" selection-end-column="50" />
+            <state relative-caret-position="258">
+              <caret line="361" column="42" lean-forward="false" selection-start-line="361" selection-start-column="42" selection-end-line="361" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1387#1513#0" expanded="true" />
                 <element signature="e#1512#1513#0" expanded="true" />
                 <element signature="e#3303#4230#0" expanded="true" />
                 <element signature="e#4229#4230#0" expanded="true" />
-                <element signature="e#16238#16263#0" expanded="true" />
+                <element signature="e#16562#16587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +70,8 @@
       <file leaf-file-name="Rehearsal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="188">
+              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#749#750#0" expanded="true" />
@@ -83,14 +84,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1023">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="1044">
+              <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
               <folding>
-                <element signature="e#2294#2501#0" expanded="true" />
-                <element signature="e#2500#2501#0" expanded="true" />
+                <element signature="e#1672#1712#0" expanded="true" />
+                <element signature="e#2315#2557#0" expanded="true" />
+                <element signature="e#2556#2557#0" expanded="true" />
+                <element signature="e#3089#3090#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +103,8 @@
       <file leaf-file-name="fullstackSolverConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="782">
+              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -109,7 +113,7 @@
       <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="442">
               <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
               <folding />
             </state>
@@ -159,6 +163,12 @@
       <find>6, 5</find>
       <find>&quot;</find>
       <find>canre</find>
+      <find>p</find>
+      <find>pant</find>
+      <find>pant</find>
+      <find>pant sc</find>
+      <find>pant sch</find>
+      <find>pant sche</find>
     </findStrings>
     <replaceStrings>
       <replace>24</replace>
@@ -198,11 +208,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Participant.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Piece.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -681,6 +691,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -692,12 +703,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4365019" sideWeight="0.26143792" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40106383" sideWeight="0.7385621" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34042552" sideWeight="0.7385621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927758" sideWeight="0.49772874" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -709,7 +721,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927758" sideWeight="0.49772874" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -732,7 +743,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java</url>
-          <line>369</line>
+          <line>377</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -814,7 +825,7 @@
             <element signature="e#1512#1513#0" expanded="true" />
             <element signature="e#3303#4230#0" expanded="true" />
             <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#16238#16263#0" expanded="true" />
+            <element signature="e#16562#16587#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -832,8 +843,11 @@
         <state relative-caret-position="144">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <element signature="e#2294#2501#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
+            <element signature="e#1672#1712#0" expanded="true" />
+            <element signature="e#2315#2557#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,21 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1102,14 +1101,6 @@
             <element signature="e#1543#1752#0" expanded="true" />
             <element signature="e#1751#1752#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,36 +1117,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="380" column="50" lean-forward="false" selection-start-line="380" selection-start-column="50" selection-end-line="380" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1387#1513#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#3303#4230#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#16238#16263#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+        <state relative-caret-position="782">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1023">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="1044">
+          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
           <folding>
-            <element signature="e#2294#2501#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
+            <element signature="e#1672#1712#0" expanded="true" />
+            <element signature="e#2315#2557#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="361" column="42" lean-forward="false" selection-start-line="361" selection-start-column="42" selection-end-line="361" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1387#1513#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#3303#4230#0" expanded="true" />
+            <element signature="e#4229#4230#0" expanded="true" />
+            <element signature="e#16562#16587#0" expanded="true" />
           </folding>
         </state>
       </provider>
