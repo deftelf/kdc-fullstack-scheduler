@@ -142,65 +142,66 @@ public class RehearsalHw {
         Participant directorVicky = addParticipant("directorVicky", sch.participants);
 
         sch.rehearsals = new HashSet<Rehearsal>();
-        sch.rehearsals.add(new Rehearsal("wed31 1", 311));
-        sch.rehearsals.add(new Rehearsal("wed31 2", 312));
-        sch.rehearsals.add(new Rehearsal("sat3 1a", 31));
-        sch.rehearsals.add(new Rehearsal("sat3 2a", 32));
-        sch.rehearsals.add(new Rehearsal("sat3 3a", 33));
-        sch.rehearsals.add(new Rehearsal("sat3 4a", 34));
-        sch.rehearsals.add(new Rehearsal("sat3 1b", 31));
-        sch.rehearsals.add(new Rehearsal("sat3 2b", 32));
-        sch.rehearsals.add(new Rehearsal("sat3 3b", 33));
-        sch.rehearsals.add(new Rehearsal("sat3 4b", 34));
-        sch.rehearsals.add(new Rehearsal("mon5 1a", 51));
-        sch.rehearsals.add(new Rehearsal("mon5 2a", 52));
-        sch.rehearsals.add(new Rehearsal("mon5 1b", 51));
-        sch.rehearsals.add(new Rehearsal("mon5 2b", 52));
-        sch.rehearsals.add(new Rehearsal("wed7 1a", 71));
-        sch.rehearsals.add(new Rehearsal("wed7 2a", 72));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 19));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 3, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 3, 13));
+        sch.rehearsals.add(new Rehearsal("", 6, 3, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 3, 15));
+        sch.rehearsals.add(new Rehearsal("2", 6, 3, 12));
+        sch.rehearsals.add(new Rehearsal("2", 6, 3, 13));
+        sch.rehearsals.add(new Rehearsal("2", 6, 3, 14));
+        sch.rehearsals.add(new Rehearsal("2", 6, 3, 15));
+        sch.rehearsals.add(new Rehearsal("", 6, 5, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 5, 20));
+        sch.rehearsals.add(new Rehearsal("2", 6, 5, 19));
+        sch.rehearsals.add(new Rehearsal("2", 6, 5, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 20));
 
-        sch.rehearsals.add(new Rehearsal("sat10 1a", 101));
-        sch.rehearsals.add(new Rehearsal("sat10 2a", 102));
-        sch.rehearsals.add(new Rehearsal("sat10 3a", 103));
-        sch.rehearsals.add(new Rehearsal("sat10 4a", 104));
-        sch.rehearsals.add(new Rehearsal("sat10 1b", 101));
-        sch.rehearsals.add(new Rehearsal("sat10 2b", 102));
-        sch.rehearsals.add(new Rehearsal("sat10 3b", 103));
-        sch.rehearsals.add(new Rehearsal("sat10 4b", 104));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 13));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 15));
+        sch.rehearsals.add(new Rehearsal("2", 6, 10, 12));
+        sch.rehearsals.add(new Rehearsal("2", 6, 10, 13));
+        sch.rehearsals.add(new Rehearsal("2", 6, 10, 14));
+        sch.rehearsals.add(new Rehearsal("2", 6, 10, 15));
 
-        sch.rehearsals.add(new Rehearsal("mon12 1a", 121));
-        sch.rehearsals.add(new Rehearsal("mon12 2a", 122));
-        sch.rehearsals.add(new Rehearsal("mon12 1b", 121));
-        sch.rehearsals.add(new Rehearsal("mon12 2b", 122));
+        sch.rehearsals.add(new Rehearsal("", 6, 12, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 12, 20));
+        sch.rehearsals.add(new Rehearsal("2", 6, 12, 19));
+        sch.rehearsals.add(new Rehearsal("2", 6, 12, 20));
 
-        sch.rehearsals.add(new Rehearsal("wed14 1a", 141));
-        sch.rehearsals.add(new Rehearsal("wed14 2a", 142));
+        sch.rehearsals.add(new Rehearsal("", 6, 12, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 12, 20));
 
-        sch.rehearsals.add(new Rehearsal("sat17 1a", 171));
-        sch.rehearsals.add(new Rehearsal("sat17 2a", 172));
-        sch.rehearsals.add(new Rehearsal("sat17 3a", 173));
-        sch.rehearsals.add(new Rehearsal("sat17 4a", 174));
-        sch.rehearsals.add(new Rehearsal("sat17 1b", 171));
-        sch.rehearsals.add(new Rehearsal("sat17 2b", 172));
-        sch.rehearsals.add(new Rehearsal("sat17 3b", 173));
-        sch.rehearsals.add(new Rehearsal("sat17 4b", 174));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 13));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 15));
+        sch.rehearsals.add(new Rehearsal("2", 6, 17, 12));
+        sch.rehearsals.add(new Rehearsal("2", 6, 17, 13));
+        sch.rehearsals.add(new Rehearsal("2", 6, 17, 14));
+        sch.rehearsals.add(new Rehearsal("2", 6, 17, 15));
 
-        sch.rehearsals.add(new Rehearsal("mon19 1a", 191));
-        sch.rehearsals.add(new Rehearsal("mon19 2a", 192));
-        sch.rehearsals.add(new Rehearsal("mon19 1b", 191));
-        sch.rehearsals.add(new Rehearsal("mon19 2b", 192));
+        sch.rehearsals.add(new Rehearsal("", 6, 19, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 19, 20));
+        sch.rehearsals.add(new Rehearsal("2", 6, 19, 19));
+        sch.rehearsals.add(new Rehearsal("2", 6, 19, 20));
 
-        sch.rehearsals.add(new Rehearsal("wed21 1a", 211));
-        sch.rehearsals.add(new Rehearsal("wed21 2a", 212));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 19));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 20));
 
-        sch.rehearsals.add(new Rehearsal("sat24 1a", 241));
-        sch.rehearsals.add(new Rehearsal("sat24 2a", 242));
-        sch.rehearsals.add(new Rehearsal("sat24 3a", 243));
-        sch.rehearsals.add(new Rehearsal("sat24 4a", 244));
-        sch.rehearsals.add(new Rehearsal("sat24 1b", 241));
-        sch.rehearsals.add(new Rehearsal("sat24 2b", 242));
-        sch.rehearsals.add(new Rehearsal("sat24 3b", 243));
-        sch.rehearsals.add(new Rehearsal("sat24 4b", 244));
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 13));
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 15));
+        sch.rehearsals.add(new Rehearsal("2", 6, 24, 12));
+        sch.rehearsals.add(new Rehearsal("2", 6, 24, 13));
+        sch.rehearsals.add(new Rehearsal("2", 6, 24, 14));
+        sch.rehearsals.add(new Rehearsal("2", 6, 24, 15));
+
 
         // Speculative
 //        sch.rehearsals.add(new Rehearsal("sun18 7a", 187));
@@ -214,20 +215,20 @@ public class RehearsalHw {
 
 
 
-        sch.rehearsals.add(new Rehearsal("wed24 1a", -241));
-        sch.rehearsals.add(new Rehearsal("wed24 2a", -242));
-        sch.rehearsals.add(new Rehearsal("wed24 1b", -241));
-        sch.rehearsals.add(new Rehearsal("wed24 2b", -242));
-
-
-        sch.rehearsals.add(new Rehearsal("sun21 1a", -211));
-        sch.rehearsals.add(new Rehearsal("sun21 2a", -212));
-        sch.rehearsals.add(new Rehearsal("sun21 3a", -213));
-        sch.rehearsals.add(new Rehearsal("sun21 4a", -214));
-        sch.rehearsals.add(new Rehearsal("sun21 1b", -211));
-        sch.rehearsals.add(new Rehearsal("sun21 2b", -212));
-        sch.rehearsals.add(new Rehearsal("sun21 3b", -213));
-        sch.rehearsals.add(new Rehearsal("sun21 4b", -214));
+//        sch.rehearsals.add(new Rehearsal("wed24 1a", -241));
+//        sch.rehearsals.add(new Rehearsal("wed24 2a", -242));
+//        sch.rehearsals.add(new Rehearsal("wed24 1b", -241));
+//        sch.rehearsals.add(new Rehearsal("wed24 2b", -242));
+//
+//
+//        sch.rehearsals.add(new Rehearsal("sun21 1a", -211));
+//        sch.rehearsals.add(new Rehearsal("sun21 2a", -212));
+//        sch.rehearsals.add(new Rehearsal("sun21 3a", -213));
+//        sch.rehearsals.add(new Rehearsal("sun21 4a", -214));
+//        sch.rehearsals.add(new Rehearsal("sun21 1b", -211));
+//        sch.rehearsals.add(new Rehearsal("sun21 2b", -212));
+//        sch.rehearsals.add(new Rehearsal("sun21 3b", -213));
+//        sch.rehearsals.add(new Rehearsal("sun21 4b", -214));
 
 
         sch.pieces = new HashSet<Piece>();
@@ -243,30 +244,30 @@ public class RehearsalHw {
         sch.pieces.add(new Piece("Amnesia", james, georgina, directorSarahD));
         sch.pieces.add(new Piece("Tag/Grown Attached", kat, spencer, yasmin, directorDave));
 
-        sch.unavailablePartimes = new HashSet<String>();
-        addUnavail(sch.unavailablePartimes, directorSarahD, 290, 60, 80, 130, 210, 220, 230, 240, 250);
-        addUnavail(sch.unavailablePartimes, directorAsma, 290, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120);
-        addUnavail(sch.unavailablePartimes, jess, 30, 60, 70, 100, 110, 240);
-        addUnavail(sch.unavailablePartimes, georgina, 80, 90, 100, 110);
-        addUnavail(sch.unavailablePartimes, michaela, 10, 80, 140, 150, 210, 220);
-        addUnavail(sch.unavailablePartimes, kat, 160, 170, 290);
-        addUnavail(sch.unavailablePartimes, rachel, 300, 30, 60, 70, 80, 90, 100, 110, 120, 130, 170, 200, 240);
-        addUnavail(sch.unavailablePartimes, matt, 100, 110, 120, 130, 140, 150, 160, 170);
-        addUnavail(sch.unavailablePartimes, directorSarahB, 30, 100, 160, 170, 240);
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 291));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 301));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 311));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 51));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 81));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 91));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 101));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 121));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 131));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 141));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 151));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 201));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 211));
-        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 231));
+//        sch.unavailablePartimes = new HashSet<String>();
+//        addUnavail(sch.unavailablePartimes, directorSarahD, 290, 60, 80, 130, 210, 220, 230, 240, 250);
+//        addUnavail(sch.unavailablePartimes, directorAsma, 290, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120);
+//        addUnavail(sch.unavailablePartimes, jess, 30, 60, 70, 100, 110, 240);
+//        addUnavail(sch.unavailablePartimes, georgina, 80, 90, 100, 110);
+//        addUnavail(sch.unavailablePartimes, michaela, 10, 80, 140, 150, 210, 220);
+//        addUnavail(sch.unavailablePartimes, kat, 160, 170, 290);
+//        addUnavail(sch.unavailablePartimes, rachel, 300, 30, 60, 70, 80, 90, 100, 110, 120, 130, 170, 200, 240);
+//        addUnavail(sch.unavailablePartimes, matt, 100, 110, 120, 130, 140, 150, 160, 170);
+//        addUnavail(sch.unavailablePartimes, directorSarahB, 30, 100, 160, 170, 240);
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 291));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 301));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 311));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 51));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 81));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 91));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 101));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 121));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 131));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 141));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 151));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 201));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 211));
+//        sch.unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(directorSarahB, 231));
 
 
 
@@ -286,12 +287,12 @@ public class RehearsalHw {
         return sch;
     }
 
-    private static void addUnavail(HashSet<String> unavailablePartimes, Participant participant, int... encodedTimes) {
-        for (int encodedTime : encodedTimes) {
-            for (int i=encodedTime; i < encodedTime + 10; i++)
-                unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(participant, i));
-        }
-    }
+//    private static void addUnavail(HashSet<String> unavailablePartimes, Participant participant, int... encodedTimes) {
+//        for (int encodedTime : encodedTimes) {
+//            for (int i=encodedTime; i < encodedTime + 10; i++)
+//                unavailablePartimes.add(FullStackEasyScoreCalculator.createParTime(participant, i));
+//        }
+//    }
 
 
     private static Participant addParticipant(String actor, HashSet<Participant> participants) {

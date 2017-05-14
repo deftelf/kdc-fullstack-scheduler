@@ -54,7 +54,7 @@ public class Piece {
             rehs.sort(new Comparator<Rehearsal>() {
                 @Override
                 public int compare(Rehearsal t0, Rehearsal t1) {
-                    return (int) (t0.time - t1.time);
+                    return (t0.date.compareTo(t1.date));
                 }
             });
         }

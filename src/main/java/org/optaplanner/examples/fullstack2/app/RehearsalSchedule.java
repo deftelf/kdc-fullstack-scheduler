@@ -19,7 +19,6 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
     @ValueRangeProvider(id="rehearsals")
     HashSet<Rehearsal> rehearsals;
     HashSet<Participant> participants;
-    HashSet<String> unavailablePartimes;
 
     @PlanningEntityCollectionProperty
     HashSet<Piece> pieces;
@@ -28,7 +27,7 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
 
 //    List<RehearsalPlan> plans = new ArrayList<RehearsalPlan>();
 
-    HardSoftScore score;;
+    HardSoftScore score;
 
     @Override
     public HardSoftScore getScore() {
@@ -75,11 +74,11 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
             parReh.sort(new Comparator<Rehearsal>() {
                 @Override
                 public int compare(Rehearsal t0, Rehearsal t1) {
-                    return (int) (t0.time - t1.time);
+                    return t0.date.compareTo(t1.date);
                 }
             });
             for (Rehearsal r : parReh) {
-                str.append(r.name);
+                str.append(r.toString());
                 str.append(", ");
             }
             str.append("\n");
@@ -112,11 +111,11 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
         Collections.sort(rehs, new Comparator<Rehearsal>() {
             @Override
             public int compare(Rehearsal rehearsal, Rehearsal t1) {
-                return (int) (rehearsal.time - t1.time);
+                return rehearsal.date.compareTo(t1.date);
             }
         });
         for (Rehearsal reh : rehs) {
-            str.append(reh.name + (remaining.contains(reh) ? " *" : "") + "\n");
+            str.append(reh.toString() + (remaining.contains(reh) ? " *" : "") + "\n");
         }
         return str.toString();
     }

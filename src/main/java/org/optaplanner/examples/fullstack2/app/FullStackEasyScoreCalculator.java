@@ -16,7 +16,7 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
         int hardScore = 0;
         int softScore = 0;
 
-        HashSet<String> participantHasRehearsalAt = new HashSet();
+        HashSet<String> participantHasRehearsalAt = new HashSet<String>();
 
         // Check rehearsal only has one piece
         HashSet<Rehearsal> rehearsalHasPiece = new HashSet<Rehearsal>();
@@ -41,44 +41,29 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
 
             // Check participants don't have conflicts
             for (Participant par : p.participants) {
-                if (p.rehearsals0 != null) {
-                    String idTime = createParTime(par, p.rehearsals0.time);
-                    if (participantHasRehearsalAt.contains(idTime))
-                        hardScore--;
-                    else
-                        participantHasRehearsalAt.add(idTime);
-                    if (sch.unavailablePartimes.contains(idTime))
-                        hardScore--;
+                for (Rehearsal r : p.getRehearsals()) {
+                    if (r != null) {
+                        String idTime = createParTime(par, r);
+                        if (participantHasRehearsalAt.contains(idTime))
+                            hardScore--;
+                        else
+                            participantHasRehearsalAt.add(idTime);
+                        if (!par.canRehearseAt(r))
+                            hardScore--;
+                    }
                 }
-                if (p.rehearsals1 != null) {
-                    String idTime = createParTime(par, p.rehearsals1.time);
-                    if (participantHasRehearsalAt.contains(idTime))
-                        hardScore--;
-                    else
-                        participantHasRehearsalAt.add(idTime);
-                    if (sch.unavailablePartimes.contains(idTime))
-                        hardScore--;
-                }
-                if (p.rehearsals2 != null) {
-                    String idTime = createParTime(par, p.rehearsals2.time);
-                    if (participantHasRehearsalAt.contains(idTime))
-                        hardScore--;
-                    else
-                        participantHasRehearsalAt.add(idTime);
-                    if (sch.unavailablePartimes.contains(idTime))
-                        hardScore--;
-                }
+
             }
         }
 
         if (hardScore >= 0) {
             for (Piece p : sch.pieces) {
                 ArrayList<Rehearsal> rehearsals = p.getRehearsals();
-                if (rehearsals.get(1).time - rehearsals.get(0).time >= 10) {
-                    softScore++;
+                if (rehearsals.get(1).date.equals(rehearsals.get(0).date)) {
+                    softScore--;
                 }
-                if (rehearsals.get(2).time - rehearsals.get(1).time >= 10) {
-                    softScore++;
+                if (rehearsals.get(2).date.equals(rehearsals.get(1).date)) {
+                    softScore--;
                 }
             }
         }
@@ -86,7 +71,7 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
         return HardSoftScore.valueOf(hardScore, softScore);
     }
 
-    public static String createParTime(Participant par, long rehTime) {
-        return par.name + ":" + rehTime;
+    public static String createParTime(Participant par, Rehearsal reh) {
+        return par.name + ":" + reh.toString();
     }
 }
