@@ -135,11 +135,76 @@ public class RehearsalHw {
         Participant kat = addParticipant("kat", sch.participants);
         Participant danielle = addParticipant("danielle", sch.participants);
         Participant michaela = addParticipant("michaela", sch.participants);
-        Participant directorAsma = addParticipant("Asma", sch.participants);
-        Participant directorSarahB = addParticipant("directorSarahB", sch.participants);
-        Participant directorSarahD = addParticipant("directorSarahD", sch.participants);
-        Participant directorDave = addParticipant("directorDave", sch.participants);
-        Participant directorVicky = addParticipant("directorVicky", sch.participants);
+        Participant directorAsma = addParticipant("directorAsma", sch.participants,
+                new Rehearsal.Date(5, 15),
+                new Rehearsal.Date(5, 16),
+                new Rehearsal.Date(5, 17),
+                new Rehearsal.Date(5, 18),
+                new Rehearsal.Date(5, 19),
+                new Rehearsal.Date(5, 20),
+                new Rehearsal.Date(5, 21),
+                new Rehearsal.Date(5,27 ),
+                new Rehearsal.Date(5, 28),
+                new Rehearsal.Date(5, 29),
+                new Rehearsal.Date(5, 31),
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 4),
+                new Rehearsal.Date(6, 5),
+                new Rehearsal.Date(6, 6),
+                new Rehearsal.Date(6, 7),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 9),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 11),
+                new Rehearsal.Date(6, 12)
+                );
+        Participant directorSarahB = addParticipant("directorSarahB", sch.participants,
+                new Rehearsal.Date(5, 22),
+                new Rehearsal.Date(5, 23),
+                new Rehearsal.Date(5, 24),
+                new Rehearsal.Date(5, 25),
+                new Rehearsal.Date(5, 29),
+                new Rehearsal.Date(5, 30),
+                new Rehearsal.Date(5, 31),
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 5),//just first hour
+                new Rehearsal.Date(6, 8),//just first hour
+                new Rehearsal.Date(6, 9),//just first hour
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 12),//just first hour
+                new Rehearsal.Date(6, 13),//just first hour
+                new Rehearsal.Date(6, 14),//just first hour
+                new Rehearsal.Date(6, 15),//just first hour
+                new Rehearsal.Date(6, 16),
+                new Rehearsal.Date(6, 17),
+                new Rehearsal.Date(6, 20),//just first hour
+                new Rehearsal.Date(6, 21),//just first hour
+                new Rehearsal.Date(6, 23),//just first hour
+                new Rehearsal.Date(6, 24));
+        Participant directorSarahD = addParticipant("directorSarahD", sch.participants,
+                new Rehearsal.Date(5, 20),
+                new Rehearsal.Date(5, 23),
+                new Rehearsal.Date(5, 26),
+                new Rehearsal.Date(5, 27)
+                );
+        Participant directorDave = addParticipant("directorDave", sch.participants,
+                new Rehearsal.Date(5, 20),
+                new Rehearsal.Date(5, 26),
+                new Rehearsal.Date(6, 9),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 11),
+                new Rehearsal.Date(6, 12) // ifneedbe
+        );
+        Participant directorVicky = addParticipant("directorVicky", sch.participants,
+                new Rehearsal.Date(6, 1),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 13),
+                new Rehearsal.Date(6, 14),
+                new Rehearsal.Date(6, 20),
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 17),
+                new Rehearsal.Date(6, 24));
 
         sch.rehearsals = new HashSet<Rehearsal>();
         sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 12));
@@ -256,7 +321,6 @@ public class RehearsalHw {
         sch.pieces = new HashSet<Piece>();
         sch.pieces.add(new Piece("Bathyscaphe", georgina, danielle, kat, directorSarahB));
         sch.pieces.add(new Piece("Wisdom", rachel, grace, michaela, directorSarahB));
-//        sch.pieces.add(new Piece("Plato's Cave", actor5, actor6, directorAsma));
         sch.pieces.add(new Piece("Bed Air", govind, danielle, directorSarahD));
         sch.pieces.add(new Piece("Insomnia", lee, michaela, directorVicky));
         sch.pieces.add(new Piece("The End", spencer, matt, rachel, grace, directorVicky));
@@ -317,9 +381,11 @@ public class RehearsalHw {
 //    }
 
 
-    private static Participant addParticipant(String actor, HashSet<Participant> participants) {
+    private static Participant addParticipant(String actor, HashSet<Participant> participants, Rehearsal.Date... notAvailable) {
         Participant p = new Participant(actor);
         participants.add(p);
+        for (Rehearsal.Date d : notAvailable)
+            p.notAvailableDate.add(d);
         return p;
     }
 
