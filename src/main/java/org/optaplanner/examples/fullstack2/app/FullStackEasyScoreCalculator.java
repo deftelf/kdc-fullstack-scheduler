@@ -23,20 +23,20 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
         for (Piece p : sch.pieces) {
             for (Rehearsal r : p.getRehearsals()) {
                 if (rehearsalHasPiece.contains(r)) {
-                    hardScore--;
+                    hardScore -= 100;
                 }
                 rehearsalHasPiece.add(r);
             }
         }
 
         for (Piece p : sch.pieces) {
-            hardScore += (p.rehearsals0 == null ? -1 : 0);
-            hardScore += (p.rehearsals1 == null ? -1 : 0);
-            hardScore += (p.rehearsals2 == null ? -1 : 0);
+            hardScore += (p.rehearsals0 == null ? -1000 : 0);
+            hardScore += (p.rehearsals1 == null ? -1000 : 0);
+            hardScore += (p.rehearsals2 == null ? -1000 : 0);
 
-            hardScore += p.rehearsals0 == p.rehearsals1 ? -1 : 0;
-            hardScore += p.rehearsals1 == p.rehearsals2 ? -1 : 0;
-            hardScore += p.rehearsals0 == p.rehearsals2 ? -1 : 0;
+            hardScore += p.rehearsals0 == p.rehearsals1 ? -1000 : 0;
+            hardScore += p.rehearsals1 == p.rehearsals2 ? -1000 : 0;
+            hardScore += p.rehearsals0 == p.rehearsals2 ? -1000 : 0;
 
 
             // Check participants don't have conflicts
@@ -49,7 +49,7 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
                         else
                             participantHasRehearsalAt.add(idTime);
                         if (!par.canRehearseAt(r))
-                            hardScore--;
+                            hardScore -= 10;
                     }
                 }
 
@@ -67,6 +67,10 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
                 }
             }
         }
+
+//        if (hardScore == -10) {
+//            calculateScore(sch);
+//        }
 
         return HardSoftScore.valueOf(hardScore, softScore);
     }

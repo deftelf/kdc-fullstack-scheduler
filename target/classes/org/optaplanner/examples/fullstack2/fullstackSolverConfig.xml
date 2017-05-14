@@ -24,7 +24,7 @@
 
   <!-- Optimization algorithms configuration -->
   <termination>
-    <secondsSpentLimit>600</secondsSpentLimit>
+    <secondsSpentLimit>6000</secondsSpentLimit>
     <!--<bestScoreLimit>0hard/100soft</bestScoreLimit>-->
   </termination>
   <!-- Power tweaked optimization algorithms configuration -->

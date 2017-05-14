@@ -358,22 +358,45 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("hoop2", 6, 24, 15));
 
 
+        Map<Rehearsal.Date, Integer> allDates = new HashMap<Rehearsal.Date, Integer>();
+        for (int i=1; i <= 24; i++) {
+            allDates.put(new Rehearsal.Date(6, i), 0);
+        }
+        for (int i=24; i <= 31; i++) {
+            allDates.put(new Rehearsal.Date(5, i), 0);
+        }
+        for (Participant p : sch.participants) {
+            for (Rehearsal.Date d : p.notAvailableDate) {
+                Integer count = allDates.get(d);
+                if (count != null)
+                    allDates.put(d, count + 1);
+            }
+        }
+        System.out.println("Date unavail counts:");
+        for (Rehearsal.Date d : allDates.keySet())
+            System.out.println(d.toString() + " " + allDates.get(d));
+
         // Speculative
-//        sch.rehearsals.add(new Rehearsal("sun18 7a", 187));
-//        sch.rehearsals.add(new Rehearsal("sun18 8a", 188));
-//        sch.rehearsals.add(new Rehearsal("sun18 5a", 185));
-//        sch.rehearsals.add(new Rehearsal("sun18 6a", 186));
-//        sch.rehearsals.add(new Rehearsal("sun18 1a", 181));
-//        sch.rehearsals.add(new Rehearsal("sun18 2a", 182));
-//        sch.rehearsals.add(new Rehearsal("sun18 3a", 183));
-//        sch.rehearsals.add(new Rehearsal("sun18 4a", 184));
+
+        sch.rehearsals.add(new Rehearsal("?", 6, 4, 12));
+        sch.rehearsals.add(new Rehearsal("?", 6, 4, 13));
+        sch.rehearsals.add(new Rehearsal("?", 6, 4, 14));
+        sch.rehearsals.add(new Rehearsal("?", 6, 4, 15));
+
+        sch.rehearsals.add(new Rehearsal("?", 6, 18, 12));
+        sch.rehearsals.add(new Rehearsal("?", 6, 18, 13));
+        sch.rehearsals.add(new Rehearsal("?", 6, 18, 14));
+        sch.rehearsals.add(new Rehearsal("?", 6, 18, 15));
+        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 12));
+        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 13));
+        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 14));
+        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 15));
 
 
-
-//        sch.rehearsals.add(new Rehearsal("wed24 1a", -241));
-//        sch.rehearsals.add(new Rehearsal("wed24 2a", -242));
-//        sch.rehearsals.add(new Rehearsal("wed24 1b", -241));
-//        sch.rehearsals.add(new Rehearsal("wed24 2b", -242));
+//        sch.rehearsals.add(new Rehearsal("?", 6, 19, 19));
+//        sch.rehearsals.add(new Rehearsal("?", 6, 19, 20));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 19, 19));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 19, 20));
 //
 //
 //        sch.rehearsals.add(new Rehearsal("sun21 1a", -211));
