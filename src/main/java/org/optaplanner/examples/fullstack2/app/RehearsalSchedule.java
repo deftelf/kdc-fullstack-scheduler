@@ -117,10 +117,14 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
 
     public String unusedRehearsals() {
         StringBuilder str = new StringBuilder();
-        HashSet<Rehearsal> remaining = new HashSet<Rehearsal>(rehearsals);
+        HashMap<Rehearsal, Piece> index = new HashMap<Rehearsal, Piece>()
+                ;
+        for (Rehearsal reh: rehearsals) {
+            index.put(reh, null);
+        }
         for (Piece piece : pieces) {
             for (Rehearsal reh : piece.getRehearsals()) {
-                remaining.remove(reh);
+                index.put(reh, piece);
             }
         }
         ArrayList<Rehearsal> rehs = new ArrayList<Rehearsal>(rehearsals);
@@ -131,7 +135,7 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
             }
         });
         for (Rehearsal reh : rehs) {
-            str.append(reh.toString() + (remaining.contains(reh) ? " *" : "") + "\n");
+            str.append(reh.toString() + " (" + (index.get(reh)) + ")\n");
         }
         return str.toString();
     }

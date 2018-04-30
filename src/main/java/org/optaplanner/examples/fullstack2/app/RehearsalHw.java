@@ -22,9 +22,6 @@ import org.optaplanner.core.api.solver.event.BestSolutionChangedEvent;
 import org.optaplanner.core.api.solver.event.SolverEventListener;
 import org.optaplanner.core.config.solver.termination.TerminationConfig;
 import org.optaplanner.examples.cloudbalancing.domain.CloudBalance;
-import org.optaplanner.examples.cloudbalancing.domain.CloudComputer;
-import org.optaplanner.examples.cloudbalancing.domain.CloudProcess;
-import org.optaplanner.examples.cloudbalancing.persistence.CloudBalancingGenerator;
 
 import java.util.*;
 
@@ -32,67 +29,7 @@ public class RehearsalHw {
 
     public static void main(String[] args) {
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                startSolver(1);
-            }
-        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(2);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(3);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(4);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(5);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(6);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(7);
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                startSolver(8);
-//            }
-//        }).start();
-    }
-
-    public static void startSolver(long seed) {
-        // Build the Solver
-        SolverFactory<RehearsalSchedule> solverFactory = SolverFactory.createFromXmlResource(
-                "org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml");
-//        solverFactory.getSolverConfig().setTerminationConfig(new TerminationConfig());
-//        solverFactory.getSolverConfig().getTerminationConfig().setsco
-        solverFactory.getSolverConfig().setRandomSeed(seed);
-        Solver<RehearsalSchedule> solver = solverFactory
-                .buildSolver();
-
-        solver.addEventListener(new SolverEventListener<RehearsalSchedule>() {
+        final SolverEventListener<RehearsalSchedule> listener = new SolverEventListener<RehearsalSchedule>() {
             @Override
             public void bestSolutionChanged(BestSolutionChangedEvent<RehearsalSchedule> bestSolutionChangedEvent) {
 
@@ -107,7 +44,69 @@ public class RehearsalHw {
                     System.out.println("\n\nUnused rehearsals\n" + newBestSolution.unusedRehearsals());
                 }
             }
-        });
+        };
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(1, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(2, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(3, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(4, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(5, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(6, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(7, listener);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                startSolver(8, listener);
+            }
+        }).start();
+    }
+
+    public static void startSolver(long seed, SolverEventListener<RehearsalSchedule> listener) {
+        // Build the Solver
+        SolverFactory<RehearsalSchedule> solverFactory = SolverFactory.createFromXmlResource(
+                "org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml");
+//        solverFactory.getSolverConfig().setTerminationConfig(new TerminationConfig());
+//        solverFactory.getSolverConfig().getTerminationConfig().setsco
+        solverFactory.getSolverConfig().setRandomSeed(seed);
+        Solver<RehearsalSchedule> solver = solverFactory
+                .buildSolver();
+
+        solver.addEventListener(listener);
 
         // Load a problem with 400 computers and 1200 processes
         RehearsalSchedule unsolvedCloudBalance = createUnsolved();
@@ -251,9 +250,19 @@ public class RehearsalHw {
                 new Rehearsal.Date(6, 24));
         Participant directorSarahD = addParticipant("directorSarahD", sch.participants,
                 new Rehearsal.Date(5, 20),
+                new Rehearsal.Date(5, 22),
                 new Rehearsal.Date(5, 23),
                 new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27)
+                new Rehearsal.Date(5, 27),
+                new Rehearsal.Date(5, 28),
+                new Rehearsal.Date(5, 29),
+                new Rehearsal.Date(6, 6),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 21),
+                new Rehearsal.Date(6, 22),
+                new Rehearsal.Date(6, 23),
+                new Rehearsal.Date(6, 24),
+                new Rehearsal.Date(6, 25)
                 );
         Participant directorDave = addParticipant("directorDave", sch.participants,
                 new Rehearsal.Date(5, 20),
@@ -275,19 +284,19 @@ public class RehearsalHw {
                 new Rehearsal.Date(6, 24));
 
         sch.rehearsals = new HashSet<Rehearsal>();
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 12));
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 13));
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 14));
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 15));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 12));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 13));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 14));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop", 5, 21, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 21, 15));
 
         sch.rehearsals.add(new Rehearsal("hoop", 5, 22, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 5, 22, 20));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 19));
-        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 20));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 19));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 5, 22, 20));
 
         sch.rehearsals.add(new Rehearsal("hoop", 5, 24, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 5, 24, 20));
@@ -297,14 +306,17 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("hoop", 5, 31, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 5, 31, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 12));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 13));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 14));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 15));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 12));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 13));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 14));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 15));
+        // 30/5 as readthrough day @ hoop?
+        //25/6 as assembly. where?
+
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 3, 15));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 20));
@@ -314,19 +326,19 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("hoop", 6, 7, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 7, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 12));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 13));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 14));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 15));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 12));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 13));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 14));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 10, 15));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 20));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 20));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 19));
+//        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 20));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 19));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 12, 20));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 14, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 14, 20));
@@ -335,10 +347,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 13));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 14));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 17, 15));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 12));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 13));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 14));
-        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 15));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 12));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 13));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 14));
+//        sch.rehearsals.add(new Rehearsal("hoop2", 6, 17, 15));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 20));
@@ -395,10 +407,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("?", 6, 18, 13));
         sch.rehearsals.add(new Rehearsal("?", 6, 18, 14));
         sch.rehearsals.add(new Rehearsal("?", 6, 18, 15));
-        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 12));
-        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 13));
-        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 14));
-        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 15));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 12));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 13));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 14));
+//        sch.rehearsals.add(new Rehearsal("?2", 6, 18, 15));
 
 
 //        sch.rehearsals.add(new Rehearsal("?", 6, 19, 19));
@@ -411,7 +423,7 @@ public class RehearsalHw {
 //        sch.rehearsals.add(new Rehearsal("sun21 2a", -212));
 //        sch.rehearsals.add(new Rehearsal("sun21 3a", -213));
 //        sch.rehearsals.add(new Rehearsal("sun21 4a", -214));
-//        sch.rehearsals.add(new Rehearsal("sun21 1b", -211));
+//        sch.rehearsals.add(new Rehearsal("sun21 1b", -211));s
 //        sch.rehearsals.add(new Rehearsal("sun21 2b", -212));
 //        sch.rehearsals.add(new Rehearsal("sun21 3b", -213));
 //        sch.rehearsals.add(new Rehearsal("sun21 4b", -214));

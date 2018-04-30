@@ -76,6 +76,6 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
     }
 
     public static String createParTime(Participant par, Rehearsal reh) {
-        return par.name + ":" + reh.toString();
+        return par.name + ":" + reh.date + "," + reh.hour;
     }
 }
