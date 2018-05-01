@@ -182,7 +182,10 @@ public class RehearsalHw {
                 new Rehearsal.Date(5, 9),
                 new Rehearsal.Date(5, 13),
                 new Rehearsal.Date(5, 14),
-                new Rehearsal.Date(5, 27));
+                new Rehearsal.Date(5, 20),
+                new Rehearsal.Date(5, 27), //partial?
+                new Rehearsal.Date(6, 10) // partial?
+        );
         Participant directorAneirin = addParticipant("directorAneirin", sch.participants
                 );
         Participant directorGrace = addParticipant("directorGrace", sch.participants,
