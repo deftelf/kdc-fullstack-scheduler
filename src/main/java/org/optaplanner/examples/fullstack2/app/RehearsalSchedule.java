@@ -135,7 +135,9 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
             }
         });
         for (Rehearsal reh : rehs) {
-            str.append(reh.toString() + " (" + (index.get(reh)) + ")\n");
+            Piece piece = index.get(reh);
+            String pieceName = piece == null ? "-" : piece.name;
+            str.append(reh.toString() + " (" + pieceName + ")\n");
         }
         return str.toString();
     }

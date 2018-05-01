@@ -3,32 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81172dc6-0485-4312-86ff-a756e4a81ad1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/cheaptime/persistence/CheapTimeImporter$CheapTimeInputBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/cheaptime/persistence/CheapTimeImporter$CheapTimeInputBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/coachshuttlegathering/persistence/CoachShuttleGatheringImporter$CoachShuttleGatheringInputBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/coachshuttlegathering/persistence/CoachShuttleGatheringImporter$CoachShuttleGatheringInputBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractPngSolutionImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractPngSolutionImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionExporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionExporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXlsxSolutionImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXlsxSolutionImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXmlSolutionExporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXmlSolutionExporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXmlSolutionImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/persistence/AbstractXmlSolutionImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$ExportAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$ExportAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$ImportAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$ImportAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$OpenAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$OpenAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$QuickOpenAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$QuickOpenAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$SaveAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$SaveAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$SolveWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/common/swingui/SolverAndPersistenceFrame$SolveWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalHw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/machinereassignment/persistence/MachineReassignmentImporter$MachineReassignmentInputBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/machinereassignment/persistence/MachineReassignmentImporter$MachineReassignmentInputBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/projectjobscheduling/persistence/ProjectJobSchedulingImporter$ProjectJobSchedulingInputBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/projectjobscheduling/persistence/ProjectJobSchedulingImporter$ProjectJobSchedulingInputBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingTspBasedGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingTspBasedGenerator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,32 +34,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1129">
-              <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+            <state relative-caret-position="370">
+              <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1204#2131#0" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2103#2229#0" expanded="true" />
-                <element signature="e#2228#2229#0" expanded="true" />
-                <element signature="e#2259#2385#0" expanded="true" />
-                <element signature="e#2384#2385#0" expanded="true" />
-                <element signature="e#2415#2541#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
-                <element signature="e#2571#2697#0" expanded="true" />
-                <element signature="e#2696#2697#0" expanded="true" />
-                <element signature="e#2727#2853#0" expanded="true" />
-                <element signature="e#2852#2853#0" expanded="true" />
-                <element signature="e#2883#3009#0" expanded="true" />
-                <element signature="e#3008#3009#0" expanded="true" />
-                <element signature="e#3039#3165#0" expanded="true" />
-                <element signature="e#3164#3165#0" expanded="true" />
-                <element signature="e#3195#3321#0" expanded="true" />
-                <element signature="e#3320#3321#0" expanded="true" />
-                <element signature="e#15905#15930#0" expanded="true" />
+                <element signature="e#1211#2138#0" expanded="true" />
+                <element signature="e#2137#2138#0" expanded="true" />
+                <element signature="e#2160#2296#0" expanded="true" />
+                <element signature="e#2295#2296#0" expanded="true" />
+                <element signature="e#2326#2462#0" expanded="true" />
+                <element signature="e#2461#2462#0" expanded="true" />
+                <element signature="e#2492#2628#0" expanded="true" />
+                <element signature="e#2627#2628#0" expanded="true" />
+                <element signature="e#2658#2794#0" expanded="true" />
+                <element signature="e#2793#2794#0" expanded="true" />
+                <element signature="e#2824#2960#0" expanded="true" />
+                <element signature="e#2959#2960#0" expanded="true" />
+                <element signature="e#2990#3126#0" expanded="true" />
+                <element signature="e#3125#3126#0" expanded="true" />
+                <element signature="e#3156#3292#0" expanded="true" />
+                <element signature="e#3291#3292#0" expanded="true" />
+                <element signature="e#3322#3458#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
+                <element signature="e#16520#16545#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,17 +68,21 @@
       <file leaf-file-name="Rehearsal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state relative-caret-position="299">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+            <state relative-caret-position="719">
+              <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -160,12 +140,17 @@
       <find>pant sche</find>
       <find>un</find>
       <find>unused</find>
+      <find>13,</find>
+      <find>3,</find>
     </findStrings>
     <replaceStrings>
       <replace>24</replace>
       <replace>5, 21</replace>
       <replace>5, 22</replace>
       <replace>&quot;hoop</replace>
+      <replace>20,</replace>
+      <replace>6, 3</replace>
+      <replace>10,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -197,16 +182,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="616" />
-    <option name="y" value="70" />
-    <option name="width" value="1916" />
-    <option name="height" value="1252" />
+    <option name="x" value="1280" />
+    <option name="width" value="1284" />
+    <option name="height" value="1414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,9 +198,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -234,6 +218,21 @@
               <item name="sources" type="cbb8eebc:String" user="sources" />
               <item name="src" type="cbb8eebc:String" user="src" />
               <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
             </path>
           </expand>
           <select />
@@ -524,7 +523,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="616" y="70" width="1916" height="1252" extended-state="0" />
+    <frame x="1280" y="0" width="1284" height="1414" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -536,25 +535,25 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26143792" side_tool="true" weight="0.4365019" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7385621" visible="true" weight="0.2923617" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7385621" visible="true" weight="0.29208302" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13259958" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19827586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4818776" weight="0.39893618" />
-      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Nl-Palette" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49772874" weight="0.32927758" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49772874" weight="0.32927758" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -609,25 +608,25 @@
           <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1204#2131#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2103#2229#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2259#2385#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2415#2541#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2571#2697#0" expanded="true" />
-            <element signature="e#2696#2697#0" expanded="true" />
-            <element signature="e#2727#2853#0" expanded="true" />
-            <element signature="e#2852#2853#0" expanded="true" />
-            <element signature="e#2883#3009#0" expanded="true" />
-            <element signature="e#3008#3009#0" expanded="true" />
-            <element signature="e#3039#3165#0" expanded="true" />
-            <element signature="e#3164#3165#0" expanded="true" />
-            <element signature="e#3195#3321#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="true" />
-            <element signature="e#15905#15930#0" expanded="true" />
+            <element signature="e#1211#2138#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2160#2296#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2326#2462#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2492#2628#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#2658#2794#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2824#2960#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#2990#3126#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+            <element signature="e#3156#3292#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3322#3458#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#16520#16545#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,25 +653,25 @@
           <caret line="90" column="31" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1204#2131#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2103#2229#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2259#2385#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2415#2541#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2571#2697#0" expanded="true" />
-            <element signature="e#2696#2697#0" expanded="true" />
-            <element signature="e#2727#2853#0" expanded="true" />
-            <element signature="e#2852#2853#0" expanded="true" />
-            <element signature="e#2883#3009#0" expanded="true" />
-            <element signature="e#3008#3009#0" expanded="true" />
-            <element signature="e#3039#3165#0" expanded="true" />
-            <element signature="e#3164#3165#0" expanded="true" />
-            <element signature="e#3195#3321#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="true" />
-            <element signature="e#15905#15930#0" expanded="true" />
+            <element signature="e#1211#2138#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2160#2296#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2326#2462#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2492#2628#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#2658#2794#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2824#2960#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#2990#3126#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+            <element signature="e#3156#3292#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3322#3458#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#16520#16545#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -848,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -876,39 +868,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+        <state relative-caret-position="370">
+          <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1211#2138#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2160#2296#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2326#2462#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2492#2628#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#2658#2794#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2824#2960#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#2990#3126#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+            <element signature="e#3156#3292#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3322#3458#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#16520#16545#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1129">
-          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+        <state relative-caret-position="299">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1204#2131#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2103#2229#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2259#2385#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2415#2541#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2571#2697#0" expanded="true" />
-            <element signature="e#2696#2697#0" expanded="true" />
-            <element signature="e#2727#2853#0" expanded="true" />
-            <element signature="e#2852#2853#0" expanded="true" />
-            <element signature="e#2883#3009#0" expanded="true" />
-            <element signature="e#3008#3009#0" expanded="true" />
-            <element signature="e#3039#3165#0" expanded="true" />
-            <element signature="e#3164#3165#0" expanded="true" />
-            <element signature="e#3195#3321#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="true" />
-            <element signature="e#15905#15930#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
         </state>
       </provider>
     </entry>
