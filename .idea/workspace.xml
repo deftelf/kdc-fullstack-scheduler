@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81172dc6-0485-4312-86ff-a756e4a81ad1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingBenchmarkApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/Depot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/Standstill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/VehicleRoutingSolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/AirLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/DistanceType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/RoadLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/segmented/HubSegmentLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/location/segmented/RoadSegmentLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/solver/DepotAngleCustomerDifficultyWeightFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/solver/DepotDistanceCustomerDifficultyWeightFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/solver/LatitudeCustomerDifficultyComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/solver/nearby/CustomerNearbyDistanceMeter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/timewindowed/TimeWindowedCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/timewindowed/TimeWindowedDepot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/timewindowed/TimeWindowedVehicleRoutingSolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/domain/timewindowed/solver/ArrivalTimeUpdatingVariableListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/VehicleRoutingDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/VehicleRoutingFileIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/VehicleRoutingImporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingDistanceTypeComparison.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingTspBasedGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/solver/score/VehicleRoutingEasyScoreCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/solver/score/VehicleRoutingIncrementalScoreCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/solver/solution/initializer/BuoyVehicleRoutingSolutionInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/swingui/VehicleRoutingPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/swingui/VehicleRoutingSolutionPainter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/swingui/VehicleRoutingWorldPanel.java" beforeDir="false" />
-    </list>
+    <list default="true" id="81172dc6-0485-4312-86ff-a756e4a81ad1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RehearsalHw.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
+            <state relative-caret-position="300">
+              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1211#2138#0" expanded="true" />
@@ -110,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RehearsalSchedule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+            <state relative-caret-position="150">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/org/optaplanner/examples/fullstack2/fullstackSolverConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java" />
       </list>
     </option>
   </component>
@@ -317,6 +284,83 @@
               <item name="java" type="cbb8eebc:String" user="java" />
               <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
               <item name="fullstack2/app" type="cbb8eebc:String" user="fullstack2/app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
+              <item name="travelingtournament" type="cbb8eebc:String" user="travelingtournament" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
+              <item name="tsp" type="cbb8eebc:String" user="tsp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
+              <item name="tsp" type="cbb8eebc:String" user="tsp" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/examples" type="cbb8eebc:String" user="org/optaplanner/examples" />
+              <item name="vehiclerouting" type="cbb8eebc:String" user="vehiclerouting" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/" type="cbb8eebc:String" user="org/optaplanner/" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/" type="cbb8eebc:String" user="org/optaplanner/" />
+              <item name="vehiclerouting" type="cbb8eebc:String" user="vehiclerouting" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sources" type="cbb8eebc:String" user="sources" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="org/optaplanner/" type="cbb8eebc:String" user="org/optaplanner/" />
+              <item name="vehiclerouting" type="cbb8eebc:String" user="vehiclerouting" />
+              <item name="app" type="cbb8eebc:String" user="app" />
             </path>
           </expand>
           <select />
@@ -611,7 +655,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4848844" weight="0.23232323" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4848844" weight="0.23212913" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -657,8 +701,14 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -671,20 +721,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalPlan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Participant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -930,35 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1211#2138#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2160#2296#0" expanded="true" />
-            <element signature="e#2295#2296#0" expanded="true" />
-            <element signature="e#2326#2462#0" expanded="true" />
-            <element signature="e#2461#2462#0" expanded="true" />
-            <element signature="e#2492#2628#0" expanded="true" />
-            <element signature="e#2627#2628#0" expanded="true" />
-            <element signature="e#2658#2794#0" expanded="true" />
-            <element signature="e#2793#2794#0" expanded="true" />
-            <element signature="e#2824#2960#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#2990#3126#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3156#3292#0" expanded="true" />
-            <element signature="e#3291#3292#0" expanded="true" />
-            <element signature="e#3322#3458#0" expanded="true" />
-            <element signature="e#3457#3458#0" expanded="true" />
-            <element signature="e#16520#16545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Rehearsal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -994,12 +1001,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/app/AllExamplesSolutionImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingPerformanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        <state relative-caret-position="150">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalHw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1211#2138#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2160#2296#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2326#2462#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2492#2628#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#2658#2794#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2824#2960#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#2990#3126#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+            <element signature="e#3156#3292#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3322#3458#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#16520#16545#0" expanded="true" />
           </folding>
         </state>
       </provider>
