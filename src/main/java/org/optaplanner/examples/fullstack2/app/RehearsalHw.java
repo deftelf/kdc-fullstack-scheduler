@@ -195,10 +195,12 @@ public class RehearsalHw {
                 new Rehearsal.Date(6, 3),
                 new Rehearsal.Date(6, 4)
         );
-        Participant directorDanielle = addParticipant("directorDanielle", sch.participants);
+        Participant directorDanielle = addParticipant("directorDanielle", sch.participants,
+                new Rehearsal.Date(6, 6));
         Participant directorGovind = addParticipant("directorGovind", sch.participants);
         Participant directorSteph = addParticipant("directorSteph", sch.participants,
                 new Rehearsal.Date(5, 7),
+                new Rehearsal.Date(5, 16),
                 new Rehearsal.Date(5, 20),
                 new Rehearsal.Date(5, 21),
                 new Rehearsal.Date(5, 22),
@@ -325,13 +327,17 @@ public class RehearsalHw {
         sch.pieces = new HashSet<Piece>();
         sch.pieces.add(new Piece("What's App-ening", directorGrace, lucy, lil));
         sch.pieces.add(new Piece("Taking Sun Lumps", directorGrace, sarah, lil));
-        sch.pieces.add(new Piece("Welcome to Future Imperfect", directorAneirin, sarah, callum));
+        sch.pieces.add(new Piece("Welcome to Future Imperfect", directorAneirin, sarah, callum,
+                tekle // small
+                ));
         sch.pieces.add(new Piece("Ill Comes Forth", directorAneirin, alex));
         sch.pieces.add(new Piece("The cream Coloured Clock", directorDanielle, gemma));
-        sch.pieces.add(new Piece("Moving Day", directorDanielle, carl, alex));
+        sch.pieces.add(new Piece("Moving Day", directorDanielle, carl,
+                alex // small
+        ));
         sch.pieces.add(new Piece("Pseudo Human Resources", directorSteph, sarah, ynes, gemma, tekle));
         sch.pieces.add(new Piece("Not A Lot Party", directorSteph, carl, ynes));
-        sch.pieces.add(new Piece("Raven 2.0", directorGovind, annabel));
+        sch.pieces.add(new Piece("Raven 2.0", directorGovind, annabel, alex));
         sch.pieces.add(new Piece("Lucy", directorGovind, lucy, tekle));
         sch.pieces.add(new Piece("Dancercourse", directorSarah, lucy, callum));
         sch.pieces.add(new Piece("Crime Sympathy Unit", directorSarah, carl, alex));
