@@ -123,7 +123,7 @@ public class RehearsalHw {
                 new Rehearsal.Date(5, 7),
                 new Rehearsal.Date(5, 9),
                 new Rehearsal.Date(5, 14),
-                new Rehearsal.Date(5, 23),
+                new Rehearsal.Date(5, 22),
                 new Rehearsal.Date(6,3),
                 new Rehearsal.Date(6, 4));
         Participant carl = addParticipant("Carl", sch.participants,
