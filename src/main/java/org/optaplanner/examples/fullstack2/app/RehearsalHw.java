@@ -20,8 +20,6 @@ import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import org.optaplanner.core.api.solver.event.BestSolutionChangedEvent;
 import org.optaplanner.core.api.solver.event.SolverEventListener;
-import org.optaplanner.core.config.solver.termination.TerminationConfig;
-import org.optaplanner.examples.cloudbalancing.domain.CloudBalance;
 
 import java.util.*;
 
