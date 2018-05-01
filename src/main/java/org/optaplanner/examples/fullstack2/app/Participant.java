@@ -5,7 +5,7 @@ import java.util.HashSet;
 /**
  * Created by carl on 23/04/17.
  */
-public class Participant {
+public class Participant implements Comparable<Participant> {
 
     final String name;
     public HashSet<Rehearsal.Date> notAvailableDate = new HashSet<Rehearsal.Date>();
@@ -16,5 +16,10 @@ public class Participant {
 
     public boolean canRehearseAt(Rehearsal r) {
         return !notAvailableDate.contains(r.date);
+    }
+
+    @Override
+    public int compareTo(Participant other) {
+        return name.compareTo(other.name);
     }
 }

@@ -6,7 +6,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 /**
  * Created by carl on 23/04/17.
  */
-public class Rehearsal {
+public class Rehearsal implements Comparable<Rehearsal> {
 
 
     public String place;
@@ -29,6 +29,14 @@ public class Rehearsal {
     @Override
     public String toString() {
         return place + " " + date + " " + hour + ":00-" + (hour+1) + ":00";
+    }
+
+    @Override
+    public int compareTo(Rehearsal other) {
+        int sorter = date.compareTo(other.date);
+        if (sorter != 0)
+            return sorter;
+        return hour - other.hour; // they're on the same day
     }
 
     static class Date implements Comparable<Date> {

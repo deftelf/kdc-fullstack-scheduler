@@ -1,5 +1,6 @@
 package org.optaplanner.examples.fullstack2.app;
 
+import org.drools.core.rule.Collect;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
 import org.optaplanner.core.api.domain.solution.PlanningEntityProperty;
@@ -47,7 +48,9 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
     @Override
     public String toString() {
         String s = "";
-        for (Piece piece : pieces) {
+        List<Piece> piecesList = new ArrayList<Piece>(pieces);
+        Collections.sort(piecesList);
+        for (Piece piece : piecesList) {
             ArrayList<Rehearsal> rehs = piece.getRehearsals();
             s += "piece:" + piece.name + "     " + rehs.get(0) + ", " + rehs.get(1) + ", " + rehs.get(2) + "\n";
         }
@@ -67,15 +70,12 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
         }
 
         StringBuilder str = new StringBuilder();
-        for (Participant p : parRehs.keySet()) {
+        ArrayList<Participant> participants = new ArrayList<Participant>(parRehs.keySet());
+        Collections.sort(participants);
+        for (Participant p : participants) {
             str.append(p.name+"\n");
             ArrayList<PieceRehearsal> parReh = parRehs.get(p);
-            parReh.sort(new Comparator<PieceRehearsal>() {
-                @Override
-                public int compare(PieceRehearsal t0, PieceRehearsal t1) {
-                    return t0.rehearsal.date.compareTo(t1.rehearsal.date);
-                }
-            });
+            Collections.sort(parReh);
             for (PieceRehearsal r : parReh) {
                 str.append("   ");
                 str.append(r.toString());
@@ -88,7 +88,7 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
     }
 
 
-    static class PieceRehearsal {
+    static class PieceRehearsal implements Comparable<PieceRehearsal> {
         Piece piece;
         Rehearsal rehearsal;
 
@@ -100,6 +100,11 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
         @Override
         public String toString() {
             return rehearsal.toString() + " (" + piece.name + ")";
+        }
+
+        @Override
+        public int compareTo(PieceRehearsal other) {
+            return rehearsal.compareTo(other.rehearsal);
         }
     }
 
@@ -128,12 +133,7 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
             }
         }
         ArrayList<Rehearsal> rehs = new ArrayList<Rehearsal>(rehearsals);
-        Collections.sort(rehs, new Comparator<Rehearsal>() {
-            @Override
-            public int compare(Rehearsal rehearsal, Rehearsal t1) {
-                return rehearsal.date.compareTo(t1.date);
-            }
-        });
+        Collections.sort(rehs);
         for (Rehearsal reh : rehs) {
             Piece piece = index.get(reh);
             String pieceName = piece == null ? "-" : piece.name;

@@ -12,7 +12,7 @@ import java.util.*;
  * Created by carl on 23/04/17.
  */
 @PlanningEntity
-public class Piece {
+public class Piece implements Comparable<Piece> {
 
     public String name;
     public Set<Participant> participants;
@@ -51,12 +51,7 @@ public class Piece {
     public ArrayList<Rehearsal> getRehearsals() {
         ArrayList<Rehearsal> rehs = Lists.newArrayList(rehearsals0, rehearsals1, rehearsals2);
         if (rehearsals0!=null && rehearsals1!= null && rehearsals2!= null) {
-            rehs.sort(new Comparator<Rehearsal>() {
-                @Override
-                public int compare(Rehearsal t0, Rehearsal t1) {
-                    return (t0.date.compareTo(t1.date));
-                }
-            });
+            Collections.sort(rehs);
         }
         return rehs;
     }
@@ -75,4 +70,8 @@ public class Piece {
         return name;
     }
 
+    @Override
+    public int compareTo(Piece other) {
+        return name.compareTo(other.name);
+    }
 }
