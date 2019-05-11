@@ -52,7 +52,7 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
         Collections.sort(piecesList);
         for (Piece piece : piecesList) {
             ArrayList<Rehearsal> rehs = piece.getRehearsals();
-            s += "piece:" + piece.name + "     " + rehs.get(0) + ", " + rehs.get(1) /*+ ", " + rehs.get(2) */+ "\n";
+            s += "piece:" + piece.name + "     " + rehs.get(0) + ", " + rehs.get(1) + ", " + rehs.get(2) + "\n";
         }
         return s;
     }

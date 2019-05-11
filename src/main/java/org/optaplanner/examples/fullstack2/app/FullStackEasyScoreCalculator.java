@@ -32,11 +32,11 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
         for (Piece p : sch.pieces) {
             hardScore += (p.rehearsals0 == null ? -1000 : 0);
             hardScore += (p.rehearsals1 == null ? -1000 : 0);
-//            hardScore += (p.rehearsals2 == null ? -1000 : 0);
+            hardScore += (p.rehearsals2 == null ? -1000 : 0);
 
             hardScore += p.rehearsals0 == p.rehearsals1 ? -1000 : 0;
-//            hardScore += p.rehearsals1 == p.rehearsals2 ? -1000 : 0;
-//            hardScore += p.rehearsals0 == p.rehearsals2 ? -1000 : 0;
+            hardScore += p.rehearsals1 == p.rehearsals2 ? -1000 : 0;
+            hardScore += p.rehearsals0 == p.rehearsals2 ? -1000 : 0;
 
 
             // Check participants don't have conflicts
@@ -62,9 +62,9 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
                 if (rehearsals.get(1).date.equals(rehearsals.get(0).date)) {
                     softScore--;
                 }
-//                if (rehearsals.get(2).date.equals(rehearsals.get(1).date)) {
-//                    softScore--;
-//                }
+                if (rehearsals.get(2).date.equals(rehearsals.get(1).date)) {
+                    softScore--;
+                }
             }
         }
 

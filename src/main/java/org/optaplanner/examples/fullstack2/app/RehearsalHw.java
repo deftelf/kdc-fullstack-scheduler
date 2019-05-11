@@ -165,6 +165,7 @@ public class RehearsalHw {
                 new Rehearsal.Date(5, 26),
                 new Rehearsal.Date(6, 2),
                 new Rehearsal.Date(6, 9),
+                new Rehearsal.Date(6, 16),
                 new Rehearsal.Date(6, 23),
                 new Rehearsal.Date(6, 30));
         Participant sarahB = addParticipant("Sarah B", sch.participants,
@@ -196,17 +197,10 @@ public class RehearsalHw {
                 new Rehearsal.Date(6, 26),
                 new Rehearsal.Date(6, 30));
         Participant tom = addParticipant("Tom", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 5),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 22),
-                new Rehearsal.Date(6, 23),
                 new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(6, 30)
+                new Rehearsal.Date(6, 29),
+                new Rehearsal.Date(6, 30),
+                new Rehearsal.Date(7, 1)
                 );
 
         Participant directorLucy = addParticipant("directorLucy", sch.participants,
@@ -262,7 +256,7 @@ public class RehearsalHw {
         sch.rehearsals = new HashSet<Rehearsal>();
 
         sch.rehearsals.add(new Rehearsal("deli", 5, 26, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 26, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 5, 26, 14));
 
         sch.rehearsals.add(new Rehearsal("hoop", 5, 27, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 5, 27, 20));
@@ -275,10 +269,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("deli", 5, 29, 20));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 1, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 1, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 1, 14));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 2, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 2, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 2, 14));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 20));
@@ -289,10 +283,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("deli", 6, 5, 20));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 8, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 8, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 8, 14));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 9, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 9, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 9, 14));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 20));
@@ -303,10 +297,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("deli", 6, 12, 20));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 15, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 15, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 15, 14));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 16, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 16, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 16, 14));
 
         // Exclude 17th
 
@@ -316,10 +310,10 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("deli", 6, 19, 20));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 22, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 22, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 22, 14));
 
         sch.rehearsals.add(new Rehearsal("deli", 6, 23, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 23, 15));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 23, 14));
 
         sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 20));
@@ -327,15 +321,15 @@ public class RehearsalHw {
         sch.rehearsals.add(new Rehearsal("deli", 6, 26, 19));
         sch.rehearsals.add(new Rehearsal("deli", 6, 26, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 29, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 29, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 20));
+        sch.rehearsals.add(new Rehearsal("deli2", 6, 29, 12));
+        sch.rehearsals.add(new Rehearsal("deli2", 6, 29, 14));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 12));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 14));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 30, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 30, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 20));
+        sch.rehearsals.add(new Rehearsal("deli2", 6, 30, 12));
+        sch.rehearsals.add(new Rehearsal("deli2", 6, 30, 14));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 12));
+        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 14));
 
         sch.rehearsals.add(new Rehearsal("hoop", 7, 1, 19));
         sch.rehearsals.add(new Rehearsal("hoop", 7, 1, 20));
