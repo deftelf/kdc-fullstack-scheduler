@@ -28,7 +28,7 @@ public class Rehearsal implements Comparable<Rehearsal> {
 
     @Override
     public String toString() {
-        return place + " " + date + " " + hour + ":00-" + (hour+1) + ":00";
+        return place + " " + date + " " + hour + ":00";
     }
 
     @Override
