@@ -50,16 +50,21 @@ class FullStackEasyScoreCalculator : EasyScoreCalculator<RehearsalSchedule> {
         }
         if (hardScore >= 0) {
             for (p in sch.pieces) {
-                val rehSet: MutableSet<Rehearsal.Date> = HashSet()
-                for (reh in p.rehearsals) {
-                    rehSet.add(reh.date)
-                }
-                mediumScore -= p.rehearsals.size - rehSet.size
+                val dates = p.rehearsals.map { it.date }
+                mediumScore -= dates.size - dates.toSet().size
             }
         }
-        if (mediumScore >= 0) {
+
+        var softScore = 0
+        if (hardScore >= 0) {
+            for (p in sch.pieces) {
+                val dates = p.rehearsals.map { it.date }.sorted()
+                val intervals = dates.zipWithNext { a, b -> b.compareTo(a) }
+                softScore += intervals.min() ?: 0
+            }
         }
-        return HardMediumSoftScore.valueOf(hardScore, mediumScore, 0)
+
+        return HardMediumSoftScore.valueOf(hardScore, mediumScore, softScore)
     }
 
     companion object {

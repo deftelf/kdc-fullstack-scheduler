@@ -66,9 +66,7 @@ public class Rehearsal implements Comparable<Rehearsal> {
 
         @Override
         public int compareTo(Date date) {
-            if (month != date.month)
-                return month - date.month;
-            return day - date.day;
+            return (month * 30 + day) - (date.month * 30 + date.day);
         }
     }
 }
