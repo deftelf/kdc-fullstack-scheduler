@@ -7,6 +7,7 @@ import org.optaplanner.core.api.domain.solution.PlanningEntityProperty;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.Solution;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
+import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 
 import java.util.*;
@@ -15,7 +16,7 @@ import java.util.*;
  * Created by carl on 23/04/17.
  */
 @PlanningSolution
-public class RehearsalSchedule implements Solution<HardSoftScore> {
+public class RehearsalSchedule implements Solution<HardMediumSoftScore> {
 
     @ValueRangeProvider(id="rehearsals")
     HashSet<Rehearsal> rehearsals;
@@ -28,15 +29,15 @@ public class RehearsalSchedule implements Solution<HardSoftScore> {
 
 //    List<RehearsalPlan> plans = new ArrayList<RehearsalPlan>();
 
-    HardSoftScore score;
+    HardMediumSoftScore score;
 
     @Override
-    public HardSoftScore getScore() {
+    public HardMediumSoftScore getScore() {
         return score;
     }
 
     @Override
-    public void setScore(HardSoftScore hardSoftScore) {
+    public void setScore(HardMediumSoftScore hardSoftScore) {
         this.score = hardSoftScore;
     }
 

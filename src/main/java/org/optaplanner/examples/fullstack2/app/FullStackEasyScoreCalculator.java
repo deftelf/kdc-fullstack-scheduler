@@ -2,6 +2,7 @@ package org.optaplanner.examples.fullstack2.app;
 
 import com.google.common.collect.Sets;
 import org.optaplanner.core.api.score.Score;
+import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 
@@ -14,7 +15,7 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
     @Override
     public Score calculateScore(RehearsalSchedule sch) {
         int hardScore = 0;
-        int softScore = 0;
+        int mediumScore = 0;
 
         HashSet<String> participantHasRehearsalAt = new HashSet<String>();
 
@@ -33,10 +34,14 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
             hardScore += (p.rehearsals0 == null ? -1000 : 0);
             hardScore += (p.rehearsals1 == null ? -1000 : 0);
             hardScore += (p.rehearsals2 == null ? -1000 : 0);
+            hardScore += (p.rehearsals3 == null ? -1000 : 0);
 
             hardScore += p.rehearsals0 == p.rehearsals1 ? -1000 : 0;
             hardScore += p.rehearsals1 == p.rehearsals2 ? -1000 : 0;
             hardScore += p.rehearsals0 == p.rehearsals2 ? -1000 : 0;
+            hardScore += p.rehearsals0 == p.rehearsals3 ? -1000 : 0;
+            hardScore += p.rehearsals1 == p.rehearsals3 ? -1000 : 0;
+            hardScore += p.rehearsals2 == p.rehearsals3 ? -1000 : 0;
 
 
             // Check participants don't have conflicts
@@ -60,19 +65,17 @@ public class FullStackEasyScoreCalculator implements EasyScoreCalculator<Rehears
             for (Piece p : sch.pieces) {
                 ArrayList<Rehearsal> rehearsals = p.getRehearsals();
                 if (rehearsals.get(1).date.equals(rehearsals.get(0).date)) {
-                    softScore--;
+                    mediumScore--;
                 }
                 if (rehearsals.get(2).date.equals(rehearsals.get(1).date)) {
-                    softScore--;
+                    mediumScore--;
                 }
             }
         }
 
-//        if (hardScore == -10) {
-//            calculateScore(sch);
-//        }
 
-        return HardSoftScore.valueOf(hardScore, softScore);
+
+        return HardMediumSoftScore.valueOf(hardScore, mediumScore, 0);
     }
 
     public static String createParTime(Participant par, Rehearsal reh) {

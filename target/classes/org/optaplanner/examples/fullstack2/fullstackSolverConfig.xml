@@ -9,7 +9,7 @@
 
   <!-- Score configuration -->
   <scoreDirectorFactory>
-    <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
+    <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
     <!--<easyScoreCalculatorClass>org.optaplanner.examples.cloudbalancing.solver.score.CloudBalancingEasyScoreCalculator</easyScoreCalculatorClass>-->
     <easyScoreCalculatorClass>org.optaplanner.examples.fullstack2.app.FullStackEasyScoreCalculator</easyScoreCalculatorClass>
     <!--<incrementalScoreCalculatorClass>org.optaplanner.examples.cloudbalancing.solver.score.CloudBalancingIncrementalScoreCalculator</incrementalScoreCalculatorClass>-->

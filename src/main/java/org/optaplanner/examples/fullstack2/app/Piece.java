@@ -20,6 +20,7 @@ public class Piece implements Comparable<Piece> {
     Rehearsal rehearsals0;
     Rehearsal rehearsals1;
     Rehearsal rehearsals2;
+    Rehearsal rehearsals3;
 
     @PlanningVariable(valueRangeProviderRefs="rehearsals")
     public Rehearsal getRehearsals0() {
@@ -48,9 +49,18 @@ public class Piece implements Comparable<Piece> {
         this.rehearsals2 = rehearsals2;
     }
 
+    @PlanningVariable(valueRangeProviderRefs="rehearsals")
+    public Rehearsal getRehearsals3() {
+        return rehearsals3;
+    }
+
+    public void setRehearsals3(Rehearsal rehearsals3) {
+        this.rehearsals3 = rehearsals3;
+    }
+
     public ArrayList<Rehearsal> getRehearsals() {
-        ArrayList<Rehearsal> rehs = Lists.newArrayList(rehearsals0, rehearsals1, rehearsals2);
-        if (rehearsals0!=null && rehearsals1!= null && rehearsals2!= null) {
+        ArrayList<Rehearsal> rehs = Lists.newArrayList(rehearsals0, rehearsals1, rehearsals2, rehearsals3);
+        if (rehearsals0!=null && rehearsals1!= null && rehearsals2!= null && rehearsals3!= null) {
             Collections.sort(rehs);
         }
         return rehs;
