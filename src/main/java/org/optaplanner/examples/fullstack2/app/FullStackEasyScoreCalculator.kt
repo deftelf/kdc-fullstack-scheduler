@@ -16,7 +16,7 @@ class FullStackEasyScoreCalculator : EasyScoreCalculator<RehearsalSchedule> {
 
         // Check rehearsal only has one piece
         val rehearsalHasPiece = HashSet<Rehearsal>()
-        for (p in sch.pieces) {
+        for (p in sch.pieces!!) {
             for (r in p.rehearsals) {
                 if (rehearsalHasPiece.contains(r)) {
                     hardScore -= 100
@@ -24,7 +24,7 @@ class FullStackEasyScoreCalculator : EasyScoreCalculator<RehearsalSchedule> {
                 rehearsalHasPiece.add(r)
             }
         }
-        for (p in sch.pieces) {
+        for (p in sch.pieces!!) {
             hardScore += if (p.rehearsals0 == null) -1000 else 0
             hardScore += if (p.rehearsals1 == null) -1000 else 0
             hardScore += if (p.rehearsals2 == null) -1000 else 0
@@ -49,7 +49,7 @@ class FullStackEasyScoreCalculator : EasyScoreCalculator<RehearsalSchedule> {
             }
         }
         if (hardScore >= 0) {
-            for (p in sch.pieces) {
+            for (p in sch.pieces!!) {
                 val dates = p.rehearsals.map { it.date }
                 mediumScore -= dates.size - dates.toSet().size
             }
@@ -57,7 +57,7 @@ class FullStackEasyScoreCalculator : EasyScoreCalculator<RehearsalSchedule> {
 
         var softScore = 0
         if (hardScore >= 0) {
-            for (p in sch.pieces) {
+            for (p in sch.pieces!!) {
                 val dates = p.rehearsals.map { it.date }.sorted()
                 val intervals = dates.zipWithNext { a, b -> b.compareTo(a) }
                 softScore += intervals.min() ?: 0

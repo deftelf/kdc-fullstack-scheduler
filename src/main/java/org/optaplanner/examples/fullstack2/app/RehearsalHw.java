@@ -40,6 +40,7 @@ public class RehearsalHw {
                     System.out.println("\n\nParticipant schedule\n" + newBestSolution.participantToString());
                     System.out.println("\n\nPieces participants\n" + newBestSolution.pieceParticipants());
                     System.out.println("\n\nUnused rehearsals\n" + newBestSolution.unusedRehearsals());
+                    System.out.println("\n\nDate/Time/Script CSV\n" + newBestSolution.dateTimeScriptCsv());
                 }
             }
         };
