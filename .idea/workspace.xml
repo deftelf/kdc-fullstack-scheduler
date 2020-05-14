@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81172dc6-0485-4312-86ff-a756e4a81ad1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_common_1_3_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/RehearsalSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optaplanner-examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/optaplanner-examples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/fullstack2/app/FullStackEasyScoreCalculator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,22 +268,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1863" height="403" key="GridCell.Tab.0.bottom" timestamp="1589494270690">
+    <state width="1863" height="403" key="GridCell.Tab.0.bottom" timestamp="1589494972591">
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
-    <state width="1863" height="403" key="GridCell.Tab.0.bottom/0.0.2560.1396@0.0.2560.1396" timestamp="1589494270690" />
-    <state width="1863" height="403" key="GridCell.Tab.0.center" timestamp="1589494270689">
+    <state width="1863" height="403" key="GridCell.Tab.0.bottom/0.0.2560.1396@0.0.2560.1396" timestamp="1589494972591" />
+    <state width="1863" height="403" key="GridCell.Tab.0.center" timestamp="1589494972591">
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
-    <state width="1863" height="403" key="GridCell.Tab.0.center/0.0.2560.1396@0.0.2560.1396" timestamp="1589494270689" />
-    <state width="1863" height="403" key="GridCell.Tab.0.left" timestamp="1589494270689">
+    <state width="1863" height="403" key="GridCell.Tab.0.center/0.0.2560.1396@0.0.2560.1396" timestamp="1589494972591" />
+    <state width="1863" height="403" key="GridCell.Tab.0.left" timestamp="1589494972590">
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
-    <state width="1863" height="403" key="GridCell.Tab.0.left/0.0.2560.1396@0.0.2560.1396" timestamp="1589494270689" />
-    <state width="1863" height="403" key="GridCell.Tab.0.right" timestamp="1589494270689">
+    <state width="1863" height="403" key="GridCell.Tab.0.left/0.0.2560.1396@0.0.2560.1396" timestamp="1589494972590" />
+    <state width="1863" height="403" key="GridCell.Tab.0.right" timestamp="1589494972591">
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
-    <state width="1863" height="403" key="GridCell.Tab.0.right/0.0.2560.1396@0.0.2560.1396" timestamp="1589494270689" />
+    <state width="1863" height="403" key="GridCell.Tab.0.right/0.0.2560.1396@0.0.2560.1396" timestamp="1589494972591" />
     <state width="1258" height="194" key="GridCell.Tab.1.bottom" timestamp="1589492896939">
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
@@ -296,6 +304,10 @@
       <screen x="0" y="0" width="2560" height="1396" />
     </state>
     <state x="658" y="306" width="592" height="783" key="find.popup/0.0.2560.1396@0.0.2560.1396" timestamp="1589493984949" />
+    <state x="617" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1589494948273">
+      <screen x="0" y="0" width="2560" height="1396" />
+    </state>
+    <state x="617" y="318" width="672" height="678" key="search.everywhere.popup/0.0.2560.1396@0.0.2560.1396" timestamp="1589494948273" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
