@@ -34,7 +34,7 @@ public class RehearsalHw {
                 // Display the result
                 RehearsalSchedule newBestSolution = bestSolutionChangedEvent.getNewBestSolution();
                 if (newBestSolution.getScore().getHardScore() >= 0) {
-                    System.out.println("\nSolved it with score " + newBestSolution.getScore().toString() + "\n"
+                    System.out.println("\n################## Solved it with score " + newBestSolution.getScore().toString() + " #################\n"
                             + newBestSolution.toString());
 
                     System.out.println("\n\nParticipant schedule\n" + newBestSolution.participantToString());
@@ -119,230 +119,210 @@ public class RehearsalHw {
         RehearsalSchedule sch = new RehearsalSchedule();
         sch.participants = new HashSet<Participant>();
         //new Rehearsal.Date(, )
-        Participant ben = addParticipant("Ben", sch.participants,
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 5),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6,10),
-                new Rehearsal.Date(6, 15),
-                new Rehearsal.Date(6, 16),
-                new Rehearsal.Date(6, 19),
-                new Rehearsal.Date(6, 22),
-                new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(6, 29),
-                new Rehearsal.Date(6, 30));
-        Participant govind = addParticipant("Govind", sch.participants,
-                new Rehearsal.Date(5, 29));
-        Participant henry = addParticipant("Henry", sch.participants,
-                new Rehearsal.Date(5, 26),
+        Participant directorSaskia = addParticipant("directorSaskia", sch.participants,
                 new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 10),
-                new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(6, 29),
-                new Rehearsal.Date(6, 30),
-                new Rehearsal.Date(7, 1));
-        Participant holly = addParticipant("Holly", sch.participants,
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 5),
-                new Rehearsal.Date(6, 12),
-                new Rehearsal.Date(6, 19),
-                new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(7, 3));
-        Participant jamila = addParticipant("Jamila", sch.participants,
-                new Rehearsal.Date(5, 26));
-        Participant owen = addParticipant("Owen", sch.participants,
-                new Rehearsal.Date(6, 8),
-                new Rehearsal.Date(6, 9));
-        Participant paul = addParticipant("Paul", sch.participants,
-                new Rehearsal.Date(6, 8),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 10),
-                new Rehearsal.Date(6, 12));
-        Participant rhydian = addParticipant("Rhydian", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 16),
-                new Rehearsal.Date(6, 23),
-                new Rehearsal.Date(6, 30));
-        Participant sarahB = addParticipant("Sarah B", sch.participants,
+                new Rehearsal.Date(6, 20),
+                new Rehearsal.Date(6, 21)
+                );
+        Participant directorMatthew = addParticipant("directorMatthew", sch.participants,
                 new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(5, 29),
                 new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 5),
                 new Rehearsal.Date(6, 10),
-                new Rehearsal.Date(6, 12),
-                new Rehearsal.Date(6, 16),
                 new Rehearsal.Date(6, 17),
-                new Rehearsal.Date(6, 19),
-                new Rehearsal.Date(6, 22),
-                new Rehearsal.Date(6, 23),
                 new Rehearsal.Date(6, 24),
-                new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(7, 1),
-                new Rehearsal.Date(7, 3));
-        Participant sarahD = addParticipant("Sarah D", sch.participants,
+                new Rehearsal.Date(7, 1));
+        Participant directorSimonne = addParticipant("directorSimonne", sch.participants,
+                new Rehearsal.Date(5, 24),
+                new Rehearsal.Date(5, 31),
+                new Rehearsal.Date(6, 7),
+                new Rehearsal.Date(6, 14),
+                new Rehearsal.Date(6, 21),
+                new Rehearsal.Date(6, 28));
+        Participant directorAnna = addParticipant("directorAnna", sch.participants,
+                new Rehearsal.Date(5, 24),
+                new Rehearsal.Date(5, 27),
+                new Rehearsal.Date(5, 31),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 14),
+                new Rehearsal.Date(6, 27),
+                new Rehearsal.Date(6, 28)
+                );
+        Participant directorMillie = addParticipant("directorMillie", sch.participants,
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 20),
+                new Rehearsal.Date(6, 21),
+                new Rehearsal.Date(6, 22),
+                new Rehearsal.Date(6, 27),
+                new Rehearsal.Date(6, 28));
+        Participant directorSarah = addParticipant("directorSarah", sch.participants,
+                new Rehearsal.Date(5, 24),
                 new Rehearsal.Date(5, 26),
                 new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(6, 1),
                 new Rehearsal.Date(6, 2),
                 new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 5),
-                new Rehearsal.Date(6, 9),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 14),
+                new Rehearsal.Date(6, 17),
+                new Rehearsal.Date(6, 24),
+                new Rehearsal.Date(7, 1));
+        Participant anie = addParticipant("Anie", sch.participants,
+                new Rehearsal.Date(6, 21));
+        Participant anjali = addParticipant("Anjali", sch.participants,
+                new Rehearsal.Date(5, 27),
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 10),
+                new Rehearsal.Date(6, 17),
+                new Rehearsal.Date(6, 24),
+                new Rehearsal.Date(7, 6)
+                );
+        Participant caroline = addParticipant("Caroline", sch.participants,
+                new Rehearsal.Date(6, 1),
+                new Rehearsal.Date(6, 3),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 15),
+                new Rehearsal.Date(6, 17),
                 new Rehearsal.Date(6, 22),
-                new Rehearsal.Date(6, 23),
-                new Rehearsal.Date(6, 26),
-                new Rehearsal.Date(6, 30));
-        Participant tom = addParticipant("Tom", sch.participants,
-                new Rehearsal.Date(6, 26),
                 new Rehearsal.Date(6, 29),
-                new Rehearsal.Date(6, 30),
                 new Rehearsal.Date(7, 1)
                 );
+        Participant doug = addParticipant("Doug", sch.participants);
+        Participant jamila = addParticipant("Jamila", sch.participants,
+                new Rehearsal.Date(5, 25),
+                new Rehearsal.Date(6, 2)
+                );
+        Participant kateOr = addParticipant("Kate OR", sch.participants,
+                new Rehearsal.Date(5, 23)
+        );
+        Participant katieM = addParticipant("Katie M", sch.participants
+        );
+        Participant maddie = addParticipant("Maddie", sch.participants,
+                new Rehearsal.Date(6, 1),
+                new Rehearsal.Date(6, 8),
+                new Rehearsal.Date(6, 20)
+        );
+        Participant mattT = addParticipant("Matt T", sch.participants,
+                new Rehearsal.Date(5, 27),
+                new Rehearsal.Date(5, 30),
+                new Rehearsal.Date(5, 31));
+        Participant matthewA = addParticipant("Matthew A", sch.participants,
+                new Rehearsal.Date(5, 25));
+        Participant rahul = addParticipant("Rahul", sch.participants);
+        Participant tom = addParticipant("Tom", sch.participants);
 
-        Participant directorLucy = addParticipant("directorLucy", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(5, 29)
-        );
-        Participant directorSaskia = addParticipant("directorSaskia", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 15),
-                new Rehearsal.Date(6, 16),
-                new Rehearsal.Date(6, 17)
-        );
-        Participant directorLloyd = addParticipant("directorLloyd", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 15),
-                new Rehearsal.Date(6, 16),
-                new Rehearsal.Date(6, 17)
-        );
-        Participant directorVicky = addParticipant("directorVicky", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 2));
-        Participant directorAneirin = addParticipant("directorAnierin", sch.participants,
-                new Rehearsal.Date(5, 26),
-                new Rehearsal.Date(5, 27),
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 15));
-        Participant directorAnna = addParticipant("directorAnna", sch.participants,
-                new Rehearsal.Date(5, 29),
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 8),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 10));
-        Participant directorClaire = addParticipant("directorClaire", sch.participants,
-                new Rehearsal.Date(6, 1),
-                new Rehearsal.Date(6, 2),
-                new Rehearsal.Date(6, 3),
-                new Rehearsal.Date(6, 8),
-                new Rehearsal.Date(6, 9),
-                new Rehearsal.Date(6, 10));
 
         sch.rehearsals = new HashSet<Rehearsal>();
 
-        sch.rehearsals.add(new Rehearsal("deli", 5, 26, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 26, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 23, 10));
+        sch.rehearsals.add(new Rehearsal("", 5, 23, 12));
+        sch.rehearsals.add(new Rehearsal("", 5, 23, 14));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 27, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 27, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 27, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 27, 20));
+        sch.rehearsals.add(new Rehearsal("", 5, 24, 10));
+        sch.rehearsals.add(new Rehearsal("", 5, 24, 12));
+        sch.rehearsals.add(new Rehearsal("", 5, 24, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 24, 16));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 29, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 5, 29, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 29, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 5, 29, 20));
+        sch.rehearsals.add(new Rehearsal("", 5, 25, 18));
+        sch.rehearsals.add(new Rehearsal("", 5, 25, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 1, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 1, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 26, 18));
+        sch.rehearsals.add(new Rehearsal("", 5, 26, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 2, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 2, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 27, 18));
+        sch.rehearsals.add(new Rehearsal("", 5, 28, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 3, 20));
+        sch.rehearsals.add(new Rehearsal("", 5, 30, 10));
+        sch.rehearsals.add(new Rehearsal("", 5, 30, 12));
+        sch.rehearsals.add(new Rehearsal("", 5, 30, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 30, 16));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 5, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 5, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 5, 20));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 10));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 12));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 14));
+        sch.rehearsals.add(new Rehearsal("", 5, 31, 16));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 8, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 8, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 1, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 1, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 9, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 9, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 2, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 2, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 10, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 3, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 4, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 12, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 12, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 12, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 6, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 6, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 6, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 6, 16));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 15, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 15, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 7, 16));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 16, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 16, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 8, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 8, 20));
 
-        // Exclude 17th
+        sch.rehearsals.add(new Rehearsal("", 6, 9, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 9, 20));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 19, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 19, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 19, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 10, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 22, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 22, 14));
+//        sch.rehearsals.add(new Rehearsal("", 6, 13, 14));
+//        sch.rehearsals.add(new Rehearsal("", 6, 13, 16));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 23, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 23, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 14, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 14, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 14, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 14, 16));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 6, 24, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 15, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 15, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli", 6, 26, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 26, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 16, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 16, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli2", 6, 29, 12));
-        sch.rehearsals.add(new Rehearsal("deli2", 6, 29, 14));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 29, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 17, 20));
 
-        sch.rehearsals.add(new Rehearsal("deli2", 6, 30, 12));
-        sch.rehearsals.add(new Rehearsal("deli2", 6, 30, 14));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 12));
-        sch.rehearsals.add(new Rehearsal("deli", 6, 30, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 20, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 20, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 20, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 20, 16));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 7, 1, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 7, 1, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 7, 1, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 7, 1, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 21, 16));
 
-        sch.rehearsals.add(new Rehearsal("hoop", 7, 3, 19));
-        sch.rehearsals.add(new Rehearsal("hoop", 7, 3, 20));
-        sch.rehearsals.add(new Rehearsal("deli", 7, 3, 19));
-        sch.rehearsals.add(new Rehearsal("deli", 7, 3, 20));
+        sch.rehearsals.add(new Rehearsal("", 6, 22, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 22, 20));
 
+        sch.rehearsals.add(new Rehearsal("", 6, 23, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 23, 20));
 
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 24, 20));
 
+        sch.rehearsals.add(new Rehearsal("", 6, 27, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 27, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 27,14));
+        sch.rehearsals.add(new Rehearsal("", 6, 27, 16));
+
+        sch.rehearsals.add(new Rehearsal("", 6, 28, 10));
+        sch.rehearsals.add(new Rehearsal("", 6, 28, 12));
+        sch.rehearsals.add(new Rehearsal("", 6, 28, 14));
+        sch.rehearsals.add(new Rehearsal("", 6, 28, 16));
+
+        sch.rehearsals.add(new Rehearsal("", 6, 29, 18));
+        sch.rehearsals.add(new Rehearsal("", 6, 29, 20));
+
+//        sch.rehearsals.add(new Rehearsal("", 7, 4, 18));
+//        sch.rehearsals.add(new Rehearsal("", 7, 4, 20));
+
+//        sch.rehearsals.add(new Rehearsal("", 7, 7, 18));
+//        sch.rehearsals.add(new Rehearsal("", 7, 7, 20));
 
 
         System.out.print("Participant unavailability:\n");
@@ -355,7 +335,7 @@ public class RehearsalHw {
         }
 
         Map<Rehearsal.Date, Integer> allDates = new HashMap<Rehearsal.Date, Integer>();
-        for (int i=1; i <= 24; i++) {
+        for (int i=1; i <= 29; i++) {
             allDates.put(new Rehearsal.Date(6, i), 0);
         }
         for (int i=24; i <= 31; i++) {
@@ -372,36 +352,24 @@ public class RehearsalHw {
         for (Rehearsal.Date d : allDates.keySet())
             System.out.println(d.toString() + " " + allDates.get(d));
 
-        // Speculative
-
-//        sch.rehearsals.add(new Rehearsal("?", 6, 4, 12));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 4, 13));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 4, 14));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 4, 15));
-//
-//        sch.rehearsals.add(new Rehearsal("?", 6, 18, 12));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 18, 13));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 18, 14));
-//        sch.rehearsals.add(new Rehearsal("?", 6, 18, 15));
 
 
 
         sch.pieces = new HashSet<Piece>();
-        sch.pieces.add(new Piece("Goat", directorVicky, henry, owen, tom));
-        sch.pieces.add(new Piece("Princess Leila", directorVicky, ben));
-        sch.pieces.add(new Piece("The New Woman", directorAnna, ben, henry, holly));
-        sch.pieces.add(new Piece("Jessica", directorAnna, govind));
-        sch.pieces.add(new Piece("High Score", directorClaire, holly, rhydian));
-        sch.pieces.add(new Piece("They're Coming to Take Me Away", directorSaskia, sarahD, ben, owen));
-        sch.pieces.add(new Piece("One Lucky Country", directorSaskia, sarahB, govind));
-        sch.pieces.add(new Piece("Aubergine", directorAneirin, paul, jamila));
-        sch.pieces.add(new Piece("Fairies", directorLucy, rhydian));
-        sch.pieces.add(new Piece("The Date", directorLucy, govind, henry, tom));
-        sch.pieces.add(new Piece("Alice in Therapy", directorLucy, jamila, ben));
-        sch.pieces.add(new Piece("Vortex", directorLloyd, sarahB, owen));
-        sch.pieces.add(new Piece("Necessary Sacrifices", directorLloyd, jamila, sarahD, sarahB));
-        sch.pieces.add(new Piece("Merits", directorLloyd, holly, rhydian, sarahD));
-        sch.pieces.add(new Piece("Death of a Mine", directorSaskia, tom, paul));
+        sch.pieces.add(new Piece("Best Before", directorMatthew, caroline, maddie));
+        sch.pieces.add(new Piece("Paper Girl", directorMatthew, maddie, mattT));
+        sch.pieces.add(new Piece("Box of Joy", directorMatthew, anjali, tom));
+        sch.pieces.add(new Piece("It Just Is", directorMatthew, caroline));
+        sch.pieces.add(new Piece("100 Ways", directorSimonne, anie, jamila, matthewA));
+        sch.pieces.add(new Piece("You Haven't Changed a Bit", directorSimonne, kateOr, rahul));
+        sch.pieces.add(new Piece("Don't Cross the Line", directorSarah, anie, jamila));
+        sch.pieces.add(new Piece("Like Frogs", directorSarah, doug, mattT));
+        sch.pieces.add(new Piece("That Place", directorSarah, doug, kateOr, maddie, rahul));
+        sch.pieces.add(new Piece("Hunting", directorAnna, kateOr, mattT));
+        sch.pieces.add(new Piece("The Poe-ster", directorAnna, doug));
+        sch.pieces.add(new Piece("Lost Judgement", directorAnna, anjali, katieM, matthewA, rahul, tom));
+        sch.pieces.add(new Piece("Filling Time", directorMillie, katieM, tom));
+        sch.pieces.add(new Piece("In Full Bloom", directorMillie, jamila, kateOr));
 
 
 
